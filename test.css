@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+
+
+.container {
+    width: 100%;
+    height: 0;
+    padding: 20px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    line-height: 1.5;
+    display: block;
+    padding: 20px 8%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;       
+}
+.content h1{
+    font-size: 140px;
+    color: #fff;
+    font-weight: 600;
+    transition: o.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content h6{
+    font-size: 35px;
+    color: #fff;
+
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.content a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(26, 140, 206);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height of the header to full viewport height */
+    overflow: hidden;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind the header content */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav{
+    width: 110%;
+    position: absolute;
+    top: 1%;
+    left: -5%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ddd;
+}
+.container hr{
+    border-color: #fff;
+    margin-top: 100px;
+    float: none;
+    clear: left;
+}
+
+.services-section{
+    margin-top: 100px;
+}
+.service-item {
+    flex: 1 1 calc(33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Blurring for glassmorphism */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, border-color 0.3s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1; /* Ensure service items are above the background shapes */
+}
+
+.service-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Brighter glassmorphism effect on hover */
+    border-color: rgba(255, 255, 255, 0.4); /* Brighter border on hover */
+    transform: translateY(-10px); /* Lift the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Match border radius of container */
+    margin-bottom: 15px;
+    transition: transform 0.3s; /* Smooth transition for image scaling */
+}
+
+.service-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.service-heading {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: #4169E1; /* Royal Blue */
+}
+
+.service-description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff; /* Light grey text color */
+}
+
+.service-cta {
+    font-size: 1em;
+    color: #4169E1; /* Royal Blue */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #4169E1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-cta:hover {
+    background-color: #4169E1; /* Royal Blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+#about {
+    background: #e0f7fa;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#about h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#about p {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.team-member {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin: 10px 0;
+    color: #00796b;
+    font-size: 1.5em;
+}
+.team-member p {
+    color: #666;
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+    .team-member {
+        flex-basis: calc(50% - 40px);
+    }
+}
+@media (max-width: 480px) {
+    .team-member {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+/* General button styles */
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size of the button text */
+    font-weight: bold;
+    color: white; /* Text color */
+    background-color: #007bff; /* Background color from the color code */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* General button styles */
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size of the button text */
+    font-weight: bold;
+    color: white; /* Text color */
+    background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient background */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* General button styles */
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size of the button text */
+    font-weight: bold;
+    color: white; /* Text color */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); /* Gradient background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    border-radius: 50px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Add some spacing between buttons */
+}
+
+.contact-button:hover,
+.contact-button:focus {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)); /* Brighter gradient for hover/focus effect */
+    border-color: rgba(255, 255, 255, 0.5); /* Brighter border on hover */
+    transform: translateY(-5px); /* Slightly lift the button */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.contact-button:active {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)); /* Even brighter gradient for active state */
+    transform: translateY(-2px); /* Slightly lower the lift */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Reduce shadow on active */
+}
+.feedback-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.feedback-form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.feedback-form legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.rating input:checked ~ label {
+    color: #ffc107;
+}
+
+.rating input:hover ~ label {
+    color: #ffc107;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.feedback-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.feedback-submit:hover {
+    background-color: #45a049;
+}
